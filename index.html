@@ -7,5 +7,29 @@
   <body>
     <h1>Welcome to my GitHub Page</h1>
     <p>This is a basic GitHub Pages site.</p>
+
+    <!-- Quiz HTML Code -->
+<body>
+
+<h1>German Adjective Endings Quiz</h1>
+
+<p>Choose the correct adjective ending:</p>
+
+<button onclick="wrongAnswer()">Der alte<b>n</b> Mann</button><br>
+<button onclick="correctAnswer()">Der alte Mann</button><br>
+<button onclick="wrongAnswer()">Der altem Mann</button><br>
+
+<p id="response"></p>
+
+<script>
+function correctAnswer() {
+  document.getElementById("response").innerHTML = "Correct!";
+}
+
+function wrongAnswer() {
+  document.getElementById("response").innerHTML = "Sorry, that's not correct. Try again.";
+}
+</script>
+
   </body>
 </html>
