@@ -10,3 +10,25 @@ h1 {
 p {
   color: #666;
 }
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #333;
+}
+
+p {
+  color: #666;
+}
+
+/* Quiz CSS Code */
+/* For instance, you might want to add some CSS to style the quiz */
+#quiz {
+  margin-bottom: 10px;
+}
+
+button {
+  display: block;
+}
