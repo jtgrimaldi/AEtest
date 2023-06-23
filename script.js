@@ -37,12 +37,6 @@ function showQuestion() {
     option.addEventListener('click', function() { checkAnswer(q.options[i]); });
     quizDiv.appendChild(option);
   }
-
-  // Add retry button
-  let retryButton = document.createElement('button');
-  retryButton.innerText = 'Noch einmal versuchen!';
-  retryButton.addEventListener('click', function() { showQuestion(); });
-  quizDiv.appendChild(retryButton);
 }
 
 function checkAnswer(userAnswer) {
@@ -58,7 +52,19 @@ function checkAnswer(userAnswer) {
     showQuestion();
   } else {
     resultsDiv.innerText += '\n Du hast das Quiz abgeschlossen!';
+    showRetryButton();
   }
+}
+
+function showRetryButton() {
+  let quizDiv = document.getElementById('quiz');
+  let retryButton = document.createElement('button');
+  retryButton.innerText = 'Noch einmal versuchen!';
+  retryButton.addEventListener('click', function() { 
+    currentQuestion = 0;
+    showQuestion(); 
+  });
+  quizDiv.appendChild(retryButton);
 }
 
 // Start the quiz by showing the first question
