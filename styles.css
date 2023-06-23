@@ -4,31 +4,42 @@ body {
 }
 
 h1 {
-  color: #333;
+  color: #ff6347;
+  text-align: center;
+  font-size: 2.5em;
 }
 
-p {
-  color: #666;
-}
-body {
-  background-color: #f0f0f0;
-  font-family: Arial, sans-serif;
-}
-
-h1 {
-  color: #333;
-}
-
-p {
-  color: #666;
-}
-
-/* Quiz CSS Code */
-/* For instance, you might want to add some CSS to style the quiz */
 #quiz {
-  margin-bottom: 10px;
+  background-color: #afeeee;
+  border: 2px solid #ff6347;
+  padding: 20px;
+  margin: 10px auto;
+  width: 80%;
+  border-radius: 15px;
 }
 
-button {
-  display: block;
+#quiz button {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+#results {
+  background-color: #afeeee;
+  border: 2px solid #ff6347;
+  padding: 20px;
+  margin: 10px auto;
+  width: 80%;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 1.5em;
+  color: #ff6347;
 }
