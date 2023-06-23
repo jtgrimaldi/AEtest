@@ -1,11 +1,11 @@
 let quiz = [
   {
-    question: "Ich sehe die alt____ Frau. Wähle das korrekte Adjektivende.",
+    question: "Ich sehe die alt____ Frau. Wähle die richtige Antwort.",
     options: ["e", "er", "em", "en"],
     answer: 0 // "e" is the correct adjective ending for a feminine noun in the accusative case.
   },
   {
-    question: "Der alt____ Mann geht zum Markt. Wähle das korrekte Adjektivende.",
+    question: "Der alt____ Mann geht zum Markt. Wähle die richtige Antwort.",
     options: ["e", "er", "em", "en"],
     answer: 3 // "en" is the correct adjective ending for a masculine noun in the nominative case.
   },
